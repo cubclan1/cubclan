@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CubClan - Cheerful Clothes for Indian Kids</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <style>
+        /* Apply custom fonts */
+        body {
+            font-family: 'Nunito', sans-serif;
+        }
+        .font-heading {
+            font-family: 'Fredoka One', cursive;
+        }
+        /* Style for the subtle texture background */
+        .texture-bg {
+            background-color: #FFFBEB; /* A warm, creamy background */
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23FDE68A' fill-opacity='0.4'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-yellow-50 texture-bg">
+
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="font-heading text-3xl text-yellow-500">CubClan</a>
+            <div class="hidden md:flex items-center space-x-8 text-lg">
+                <a href="#new-arrivals" class="text-gray-700 hover:text-pink-500 transition">New Arrivals</a>
+                <a href="#boys" class="text-gray-700 hover:text-pink-500 transition">Boys'</a>
+                <a href="#girls" class="text-gray-700 hover:text-pink-500 transition">Girls'</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-2xl text-gray-700">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
+            <a href="#new-arrivals" class="block text-gray-700 hover:text-pink-500">New Arrivals</a>
+            <a href="#boys" class="block text-gray-700 hover:text-pink-500">Boys' Collection</a>
+            <a href="#girls" class="block text-gray-700 hover:text-pink-500">Girls' Collection</a>
+        </div>
+    </header>
+
+    <section class="relative h-[80vh] bg-cover bg-center" style="background-image: url('hero-bg.jpg');">
+        <div class="absolute inset-0 bg-black/30"></div>
+        <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+            <h1 class="font-heading text-5xl md:text-7xl drop-shadow-lg">Dress Your Little Explorer!</h1>
+            <p class="mt-4 text-xl md:text-2xl max-w-2xl">Vibrant, comfy, and playful clothes made for every adventure in India.</p>
+            <a href="#new-arrivals" class="mt-8 bg-pink-500 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-pink-600 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                Explore Collections <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <section id="new-arrivals" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="font-heading text-4xl text-center text-gray-800 mb-12">Fresh & Fun New Arrivals</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden group">
+                    <img src="product1.jpg" alt="Colorful Kids T-Shirt" class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-4 text-center">
+                        <h3 class="text-lg font-bold text-gray-800">Dino Explorer Tee</h3>
+                        <p class="text-gray-600 mt-1">₹499</p>
+                        <a href="#" class="mt-4 inline-block bg-yellow-400 text-gray-800 font-bold py-2 px-6 rounded-full hover:bg-yellow-500 transition">Shop Now</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden group">
+                    <img src="product2.jpg" alt="Girls Floral Dress" class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-4 text-center">
+                        <h3 class="text-lg font-bold text-gray-800">Sunny Floral Dress</h3>
+                        <p class="text-gray-600 mt-1">₹899</p>
+                        <a href="#" class="mt-4 inline-block bg-yellow-400 text-gray-800 font-bold py-2 px-6 rounded-full hover:bg-yellow-500 transition">Shop Now</a>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="boys" class="py-20 bg-blue-50">
+        <div class="container mx-auto px-6">
+            <h2 class="font-heading text-4xl text-center text-gray-800 mb-12">Awesome Boys' Collection</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden group">
+                    <img src="product3.jpg" alt="Boys Cargo Shorts" class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-4 text-center">
+                        <h3 class="text-lg font-bold text-gray-800">Adventure Cargo Shorts</h3>
+                        <p class="text-gray-600 mt-1">₹699</p>
+                        <a href="#" class="mt-4 inline-block bg-blue-500 text-white font-bold py-2 px-6 rounded-full hover:bg-blue-600 transition">Shop Now</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden group">
+                    <img src="product4.jpg" alt="Boys Hoodie" class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-4 text-center">
+                        <h3 class="text-lg font-bold text-gray-800">Cosmic Rocket Hoodie</h3>
+                        <p class="text-gray-600 mt-1">₹1,199</p>
+                        <a href="#" class="mt-4 inline-block bg-blue-500 text-white font-bold py-2 px-6 rounded-full hover:bg-blue-600 transition">Shop Now</a>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="girls" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="font-heading text-4xl text-center text-gray-800 mb-12">Charming Girls' Collection</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden group">
+                    <img src="product5.jpg" alt="Girls Twirl Skirt" class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-4 text-center">
+                        <h3 class="text-lg font-bold text-gray-800">Rainbow Twirl Skirt</h3>
+                        <p class="text-gray-600 mt-1">₹799</p>
+                        <a href="#" class="mt-4 inline-block bg-pink-500 text-white font-bold py-2 px-6 rounded-full hover:bg-pink-600 transition">Shop Now</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden group">
+                    <img src="product6.jpg" alt="Girls Leggings" class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-4 text-center">
+                        <h3 class="text-lg font-bold text-gray-800">Unicorn Sparkle Leggings</h3>
+                        <p class="text-gray-600 mt-1">₹599</p>
+                        <a href="#" class="mt-4 inline-block bg-pink-500 text-white font-bold py-2 px-6 rounded-full hover:bg-pink-600 transition">Shop Now</a>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-green-50">
+        <div class="container mx-auto px-6">
+            <h2 class="font-heading text-4xl text-center text-gray-800 mb-12">Words from Happy Parents</h2>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="text-yellow-400 text-2xl mb-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic">"The quality is amazing! My son loves his dino tee and wears it everywhere. The colors are still bright after so many washes."</p>
+                    <p class="font-bold text-gray-800 mt-4">- Priya S., Mumbai</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="text-yellow-400 text-2xl mb-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic">"Finally, stylish and comfortable clothes for kids in India! The delivery was fast and the packaging was so cute. Highly recommend!"</p>
+                    <p class="font-bold text-gray-800 mt-4">- Arjun K., Bangalore</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="text-yellow-400 text-2xl mb-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="text-gray-600 italic">"My daughter feels like a princess in her new dress. The fabric is so soft on her skin. We'll definitely be shopping here again."</p>
+                    <p class="font-bold text-gray-800 mt-4">- Anjali D., Delhi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <div>
+                    <h3 class="font-heading text-3xl text-yellow-500 mb-2">CubClan</h3>
+                    <p class="text-gray-400">Making childhood colorful, one outfit at a time. Crafted with love in India.</p>
+                    <div class="mt-4 flex justify-center md:justify-start space-x-4">
+                        <a href="#" class="text-2xl hover:text-pink-400 transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-2xl hover:text-blue-400 transition"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#" class="text-2xl hover:text-green-400 transition"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Get in Touch</h4>
+                    <p class="text-gray-400"><i class="fas fa-phone-alt mr-2"></i> +91 12345 67890</p>
+                    <p class="text-gray-400 mt-2"><i class="fas fa-envelope mr-2"></i> hello@cubclan.in</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Join Our Clan!</h4>
+                    <p class="text-gray-400 mb-4">Get updates on new arrivals and special offers.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Enter your email" class="w-full rounded-l-lg px-4 text-gray-800">
+                        <button type="submit" class="bg-yellow-500 text-gray-800 font-bold px-4 rounded-r-lg hover:bg-yellow-600 transition">Go</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-500">
+                <p>&copy; 2025 CubClan. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
